@@ -99,7 +99,7 @@ jobs:
             curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
             echo "UPLOADNAME=-KernelSU" >> $GITHUB_ENV
         else
-            curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+            curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
             echo "UPLOADNAME=-KernelSU" >> $GITHUB_ENV
         fi
     - name: Generate kernel configuration
