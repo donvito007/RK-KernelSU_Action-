@@ -15,7 +15,7 @@ on:
       KERNEL_DEFCONFIG:
         description: 'Defconfig'
         required: true
-        default: 'alioth_defconfig'
+        default: 'thyme_defconfig'
       TARGET_ARCH:
         description: 'Target ARCH'
         required: true
