@@ -15,7 +15,7 @@ on:
       KERNEL_DEFCONFIG:
         description: 'Defconfig'
         required: true
-        default: 'apollo_defconfig'
+        default: 'alioth_defconfig'
       TARGET_ARCH:
         description: 'Target ARCH'
         required: true
