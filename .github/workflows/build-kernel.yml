@@ -50,6 +50,7 @@ on:
 
 jobs:
   build:
+    name: Build Kernel by ${{ github.actor }}
     runs-on: ubuntu-latest
     steps:
 
