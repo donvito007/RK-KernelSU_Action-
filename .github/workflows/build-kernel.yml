@@ -7,11 +7,11 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel Source'
         required: true
-        default: 'Rohail33/Realking_kernel_sm8250'
+        default: 'donvito007/nexus_kernel_xiaomi_sm8250'
       KERNEL_SOURCE_BRANCH:
         description: 'Branch'
         required: true
-        default: 'base'
+        default: 'rebase'
       KERNEL_DEFCONFIG:
         description: 'Defconfig'
         required: true
