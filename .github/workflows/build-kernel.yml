@@ -23,7 +23,7 @@ on:
       KERNEL_FILE:
         description: 'Your kernel out image name'
         required: true
-        default: 'Image.gz'
+        default: 'Image.gz-dtb'
       CLANG_URL:
         description: 'Clang URL'
         required: true
@@ -176,9 +176,10 @@ jobs:
         if [ ${{ env.CHECK_DTBO_IS_OK }} = true ] ; then
             cp -fp ../android-kernel/out/arch/${{ env.TARGET_ARCH }}/boot/dtbo.img ./
         fi
-        cp -fp ../android-kernel/out/.config ./
-        cp -fp ../android-kernel/out/defconfig ./
-        rm -rf .git* modules patch ramdisk
+            cp -fp ../android-kernel/out/arch/${{ env.TARGET_ARCH }}/boot/dtb ./
+            cp -fp ../android-kernel/out/.config ./
+            cp -fp ../android-kernel/out/defconfig ./
+            rm -rf .git* modules patch ramdisk
     - name: Upload AnyKernel3
       if: env.CHECK_KERNEL_FILE_IS_OK == 'true'
       uses: actions/upload-artifact@v3
