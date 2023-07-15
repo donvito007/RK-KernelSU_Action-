@@ -7,11 +7,11 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel Source'
         required: true
-        default: 'donvito007/nexus_kernel_xiaomi_sm8250'
+        default: 'donvito007/Xiaomi_Kernel_RK'
       KERNEL_SOURCE_BRANCH:
         description: 'Branch'
         required: true
-        default: 'rebase'
+        default: 'non-ksu'
       KERNEL_DEFCONFIG:
         description: 'Defconfig'
         required: true
@@ -23,7 +23,7 @@ on:
       KERNEL_FILE:
         description: 'Your kernel out image name'
         required: true
-        default: 'Image.gz-dtb'
+        default: 'Image'
       CLANG_URL:
         description: 'Clang URL'
         required: true
@@ -35,7 +35,7 @@ on:
       USE_KPROBES:
         description: 'Use Kprobes'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
       USE_KERNELSU:
         description: 'Use KernelSU'
